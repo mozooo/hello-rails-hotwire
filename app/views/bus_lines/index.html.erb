@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Bus lines</h1>
+
+<div id="bus_lines">
+  <% @bus_lines.each do |bus_line| %>
+    <%= render bus_line %>
+    <p>
+      <%= link_to "Show this bus line", bus_line %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New bus line", new_bus_line_path %>

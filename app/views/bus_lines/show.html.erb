@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bus_line %>
+
+<div>
+  <%= link_to "Edit this bus line", edit_bus_line_path(@bus_line) %> |
+  <%= link_to "Back to bus lines", bus_lines_path %>
+
+  <%= button_to "Destroy this bus line", @bus_line, method: :delete %>
+</div>
