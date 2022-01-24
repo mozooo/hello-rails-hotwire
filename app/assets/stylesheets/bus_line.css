@@ -1,0 +1,29 @@
+
+.bus-line-table {
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #666666;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #666666;
+  border-collapse: collapse;
+}
+
+.bus-line-table th, .bus-line-table td {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #666666;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #666666;
+  padding: 4px;
+}
+
+.bus-line-table th.operation {
+  width: 200px;
+}
+
+.bus-line-table td.operation {
+  text-align: center;
+}

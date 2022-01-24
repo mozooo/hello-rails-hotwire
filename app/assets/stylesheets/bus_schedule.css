@@ -1,0 +1,50 @@
+
+.body {
+  padding: 8px;
+}
+
+.bus-schedule-table {
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #666666;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #666666;
+  border-collapse: collapse;
+}
+
+.bus-schedule-table th, .bus-schedule-table td {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #666666;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #666666;
+  padding: 4px;
+}
+
+.bus-schedule-table th.departure-hour, .bus-schedule-table th.departure-minute {
+  width: 100px;
+}
+
+.bus-schedule-table th.operation {
+  width: 200px;
+}
+
+.bus-schedule-table td.departure-hour, .bus-schedule-table td.departure-minute {
+  text-align: right;
+}
+
+.bus-schedule-table td.operation {
+  text-align: center;
+}
+
+.bus-schedule-table td.loading {
+  text-align: center;
+  height: 50px;
+}
+
+.bus-schedule-table tr.selected {
+  background-color: #ffffcc;
+}

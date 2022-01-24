@@ -1,0 +1,28 @@
+<%= turbo_frame_tag 'bus_schedules', src: bus_schedules.nil? ? list_bus_schedules_path : nil do %>
+  <table class="bus-schedule-table" data-controller="schedule" data-schedule-selected-class="selected">
+    <thead>
+      <tr>
+        <th class="departure-hour">時</td>
+        <th class="departure-minute">分</td>
+        <th class="line">路線</td>
+        <th class="operation">操作</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% if bus_schedules.nil? %>
+      <tr>
+        <td colspan="4" class="loading"><%= image_tag 'loading.gif' %></td>
+      </tr>
+      <% else %>
+        <% bus_schedules.each do |bus_schedule| %>
+        <tr data-schedule-target="row" data-action="click->schedule#selectRow">
+          <td class="departure-hour"><%= bus_schedule.departure_hour %></td>
+          <td class="departure-minute"><%= bus_schedule.departure_minute %></td>
+          <td class="line"><%= bus_schedule.bus_line.name %></td>
+          <td class="operation"><%= link_to "Show this bus schedule", bus_schedule, data: { turbo_frame: '_top' } %></td>
+        </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

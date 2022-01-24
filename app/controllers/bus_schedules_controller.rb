@@ -3,7 +3,6 @@ class BusSchedulesController < ApplicationController
 
   # GET /bus_schedules
   def index
-    @bus_schedules = BusSchedule.all
   end
 
   # GET /bus_schedules/1
