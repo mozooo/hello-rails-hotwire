@@ -7,10 +7,16 @@ Rails7、Hotwireを使ったサンプル。
 
 ## スタック
 
-- Ruby 3
-- Rails 7
+- バックエンド
+  - Ruby 3
+  - Rails 7
+  - PostgreSQL
+- フロントエンド
   - Hotwire
-- PostgreSQL
+    - TurboDrive
+    - TurboFrame
+    - TurboStream
+    - Stimulus
 
 ## セットアップ
 
